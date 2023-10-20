@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>AniNews</title>
+  </head>
+  <body>
+    <nav>
+        <div>
+            <h1>Ani<break>News</break></h1>
+        </div>
+        <ul class="menu">
+          <li>Home</li>
+          <li>Artikel</li>
+          <li>Tambah Artikel</li>
+          <li>Pusat Bantuan</li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Tambah Artikel</h1>
+      <form action="add.php" method="POST">
+        <label for="thumbnail">Thumbnail</label>
+        <input type="file" name="thumbnail" id="judul">
+        <label for="judul">Judul Artikel</label>
+        <input type="text" name="judul" id="judul" />
+        <label for="tag">Author</label>
+        <input type="text" name="tag" id="tag" />
+        <label for="isi">Isi Artikel</label>
+        <textarea name="isi" id="isi" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </body>
+</html>
